@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html>
+    <style>
+        /* база */
+
+        .html {
+            background-color: lime;
+            color: black;
+            width: 870px;
+            height: 1267px;
+            text-align: left;
+            margin-left: 525px;
+        }
+        .page {
+            background-color: yellow;
+            width: 860px;
+            height: 1232px;
+            color: black;
+            margin: 5px;
+    
+        }
+
+        /* регионы */
+
+        .region1, .region2, .region3, .region4 {
+            background-color: red;
+            color: white;
+            margin: 5px;
+        }
+        .region1 {
+            height: 133px;
+        }
+        .region2 {
+            width: 324px;
+            height: 634px;
+        }
+        .region3 {
+            width: 541px;
+            height: 634px;
+        }
+        .region4 {
+            height: 306px;
+        }
+        .container {
+            display: flex;
+            flex-direction: row;
+        }
+
+        /* синие дивы */
+
+        .block1, .block, .block3, .block2 {
+            background-color: blue;
+            margin: 5px;
+            color: white;
+        }
+        .block1 {
+            height: 100px;
+        }
+        .block2 {
+            height: 285px;
+        }
+        .block3 {
+            width: 277px;
+            height: 272px
+        }
+        .container2 {
+            display: flex;
+            flex-direction: row;
+        }
+
+        /* спанчики */
+
+        .html-s {
+            margin: 5px;
+        }
+        .html-d {
+            display: inline-block;
+            height: 278px;
+        }
+        .html-f {
+            margin: 5px;
+        }
+        .screen-rec {
+            display: inline-block;
+            width: 300px;
+            color: gray;
+
+        }
+
+        /* нода */
+
+        .node {
+            margin: 5px;
+            background-color: gray;
+            height: 601px;
+        }
+
+        /* "упаковщик" контента */
+
+        .content {
+            margin: 5px;
+            background-color: purple;
+            height: 313px;
+        }
+        .comment {
+            margin: 10px;
+            background-color: cadetblue;
+            height: 118px;
+        }
+
+        /* иконка */
+
+        .imagine {
+            padding-left: 750px;
+        }
+    </style>
+    <head>
+        <meta charset="utf-8">
+    </head>
+    <body>
+        <span class="screen-rec">screen 1920x1080</span>
+        <div class="html">
+            <span class="html-s"><em>html.tpl.php - основной html код страницы (DOCTYPE, head, body)</em></span>
+            <div class="page">
+
+                <span class="html-s"><em>page.tpl.php - вывод содержимого страницы(body)</em></span>
+                <div class="imagine">
+                    <image src="/home/alm-hexly36/Загрузки/149229(1).png" type="image/png"></image>
+                </div>
+                    <div class="region1">
+                        <span class="html-s"><em>region.tpl.php - регионы</em></span>
+
+                        <div class="block1">
+                            <span class="html-s"><em>block.tpl.php - блоки</em></span>
+
+                        </div>
+                    </div>
+                    <section class="container">
+                        <div class="region2">
+                            <span class="html-s"><em>region.tpl.php</em></span>
+    
+                            <div class="block2">
+                                <span class="html-s"><em>block.tpl.php</em></span>
+    
+                            </div>
+                        </div>
+                        <div class="region3">
+                            <span class="html-s"><em>region.tpl.php</em></span>
+                            <div class="node">
+                                <span class="html-d"><em>node,tpl.php - вывод контента</em></span>
+                                <div class="content">
+                                    <span class="html-f"><em>content-wrapper.tpl.php вывод всех коментариев + форма добавления комментариев</em></span>
+                                    <div class="comment">
+                                        <span class="html-s"><em>comment.tpl.php отдельный комментарий</em></span>
+                                    </div>
+                                    <div class="comment">
+                                        <span class="html-s"><em>comment.tpl.php отдельный комментарий</em></span>
+                                    </div>
+                                </div>
+                            </div>
+                         </div>
+                </section>
+                <div class="region4">
+                    <span class="html-s"><em>region.tpl.php</em></span>
+                    <section class="container2">
+                        <div class="block3">
+                            <span class="html-s"><em>block.tpl.php</em></span>
+                        </div>
+                        <div class="block3">
+                            <span class="html-s"><em>block.tpl.php</em></span>
+                        </div>
+                        <div class="block3">
+                            <span class="html-s"><em>block.tpl.php</em></span>
+                        </div>
+                    </section>
+                </div>
+            </div>
+        </div>
+    </body>
+</html> <!-- 180 строк не считая тэги style 😲-->
